@@ -1,13 +1,7 @@
-/* ul {
+/* body {
     position: relative;
-    top: 0;
     width: 100%;
-}
-
-li {
-    display:inline-flex;
 } */
-
 a {
     padding: 10px;
   }
@@ -22,13 +16,15 @@ a {
     border-radius: 50%;
 }
 
-.bottom {
+.footer {
     position: absolute;
+    width: 100%;
     bottom: 0;
+    background-color: #f2f2f2;
+    padding: 14px;
 }
 
 .footer-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
 }
