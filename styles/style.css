@@ -2,12 +2,17 @@ body, input, button {
     font-size: 14px;
     font-family: arial,sans-serif;
     color: #222;
-    text-decoration: none;
 }
 
-a {
+a, a:link, a:visited {
     padding: 10px;
+    text-decoration: none;
+    color: inherit;
   }
+
+a:hover {
+    text-decoration: underline;
+}
 
 .header-container {
     display: flex;
@@ -30,19 +35,76 @@ a {
     padding: 12px;
 }
 
-.buttons {
+.search-bar {
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
-    padding: 30px
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    min-width: 100px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    color: #9aa0a6;
+    fill: currentColor;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin: 10px;
+}
+
+.search {
+    padding-left: 30px;
+    border-radius: 50px;
+    height: 34px;
+    width: 600px;
+    border-color: #0000002b;
+    border-width: .5px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content:space-between;
+    padding: 30px;
+    width: 250px;
+    margin: 0 auto;
+    appearance: textfield;
+}
+
+.buttons {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    line-height: 27px;
+    height: 36px;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+.buttons:hover {
+    border-color: #6d6e7063;
+    border-width: 1px;
+    border-style:groove;
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     width: 98%;
     bottom: 0;
     left: 0;
     background-color: #f2f2f2;
     padding: 14px;
+    border-color: #dadce0;
+    border-width: 1px;
+    border-style: solid;
+    color: #70757a;
 }
 
 .footer-container {
